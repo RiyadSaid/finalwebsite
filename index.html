@@ -3,27 +3,37 @@
 <html>
     <head>
         <title>Top Best Selling Games of All Time</title>
-        <style>
-            body {
-                background-color:black
-            }
-            h1 {
-                color:aqua;
-            }
-            h2 {
-                color: aliceblue;
-                font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                font-size: medium;
-            }
-            a {
-                color: aqua;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
     <body>
         <h1>Top Best Selling Games of All Time</h1>
         <h2>This is a list of video games that have sold the highest number of software units worldwide.</h2>
+
+        <div class="container">
+            <div class="spinBtn">What Game Should I Try</div>
+            <div class="wheel">
+                <div class="number" style="--i:1;--clr: #0dff00;"><span>Minecraft</span></div>
+                <div class="number" style="--i:2;--clr: #ffaa00;"><span>Grand Theft Auto V</span></div>
+                <div class="number" style="--i:3;--clr: #0099ff;"><span>Tetris (EA)</span></div>
+                <div class="number" style="--i:4;--clr: #00fbff;"><span>Wii Sports</span></div>
+                <div class="number" style="--i:5;--clr: #ff8c00;"><span>PUBG: Battlegrounds</span></div>
+                <div class="number" style="--i:6;--clr: #ff0000;"><span>Mario Kart 8 / Deluxe</span></div>
+                <div class="number" style="--i:7;--clr: #ff5500;"><span>Red Dead Redemption 2</span></div>
+                <div class="number" style="--i:8;--clr: #00b3ff;"><span>Super Mario Bros.</span></div>
+                </div>
+        </div>
+
+        <script>
+            let wheel = document.querySelector('.wheel');
+            let spinBtn = ddocument.querySelector('.spinBtn');
+            let value = Math.ceil(Math.random() * 3600)
+
+            spinBtn.onclick = function({
+                wheel.style.transform = "rotate(" + Value + "deg)";
+                value += Math.ceil(Math.random() * 3600);
+            })
+        </script>
 
         <h1>1. Minecraft</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Minecraft_cover.png">
@@ -60,6 +70,8 @@
 
         <h1>4. Wii Sports</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Wii_Sports_Europe.jpg">
+        <br>
+        <a href="wiisports.html">See Grand Theft Auto V</a>
         <h2>Sales: 82,900,000</h2>
         <h2>Series: Wii</h2>
         <h2>Platform(s): Wii</h2>
@@ -69,6 +81,8 @@
 
         <h1>5. PUBG: Battlegrounds</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Pubgbattlegrounds.png">
+        <br>
+        <a href="pubgbattlegrounds.html">See Grand Theft Auto V</a>
         <h2>Sales: 75,000,000</h2>
         <h2>Series: PUBG Universe</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -78,6 +92,8 @@
 
         <h1>6. Mario Kart 8 / Deluxe</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/b/b5/MarioKart8Boxart.jpg">
+        <br>
+        <a href="mariokart8deluxe.html">See Grand Theft Auto V</a>
         <h2>Sales: 70,430,000</h2>
         <h2>Series: Mario Kart</h2>
         <h2>Platform(s): Wii U / Switch</h2>
@@ -87,6 +103,8 @@
 
         <h1>7. Red Dead Redemption 2</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/4/44/Red_Dead_Redemption_II.jpg">
+        <br>
+        <a href="reddeadredemption2.html">See Grand Theft Auto V</a>
         <h2>Sales: 61,000,000</h2>
         <h2>Series: Red Dead</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -96,6 +114,8 @@
 
         <h1>8. Super Mario Bros.</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Super_Mario_Bros._box.png">
+        <br>
+        <a href="supermariobros.html">See Grand Theft Auto V</a>
         <h2>Sales: 58,000,000</h2>
         <h2>Series: Super Mario</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -105,6 +125,8 @@
 
         <h1>9. Overwatch</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Overwatch_cover_art.jpg">
+        <br>
+        <a href="overwatch.html">See Grand Theft Auto V</a>
         <h2>Sales: 50,000,000</h2>
         <h2>Series: Overwatch</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -114,6 +136,8 @@
 
         <h1>10. Human: Fall Flat</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/e/e5/Human_Fall_Flat_cover_art.jpg">
+        <br>
+        <a href="humanfallflat.html">See Grand Theft Auto V</a>
         <h2>Sales: 50,000,000</h2>
         <h2>Series: Human: Fall Flat</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -123,6 +147,8 @@
 
         <h1>11. The Witcher 3: Wild Hunt</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Witcher_3_cover_art.jpg">
+        <br>
+        <a href="thewitcher3wildhunt.html">See Grand Theft Auto V</a>
         <h2>Sales: 50,000,000</h2>
         <h2>Series: The Witcher</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -132,6 +158,8 @@
 
         <h1>12. Tetris (Gameboy / NES)</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Tetris_Boxshot.jpg">
+        <br>
+        <a href="tetrisgameboynes.html">See Grand Theft Auto V</a>
         <h2>Sales: 48,000,000</h2>
         <h2>Series: Tetris</h2>
         <h2>Platform(s): Gameboy / NES</h2>
@@ -141,6 +169,8 @@
 
         <h1>13. Pokemon Red / Green / Blue / Yellow</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/af/Pok%C3%A9mon_Red_and_Blue_cover_art.webp/440px-Pok%C3%A9mon_Red_and_Blue_cover_art.webp.png">
+        <br>
+        <a href="pokemonredgreenblueyellow.html">See Grand Theft Auto V</a>
         <h2>Sales: 47,520,000</h2>
         <h2>Series: Pokemon</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -150,6 +180,8 @@
 
         <h1>14. Animal Crossing: New Horizons</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/1/1f/Animal_Crossing_New_Horizons.jpg">
+        <br>
+        <a href="animalcrossingnewhorizons.html">See Grand Theft Auto V</a>
         <h2>Sales: 45,360,000</h2>
         <h2>Series: Animal Crossing</h2>
         <h2>Platform(s): Nintendo Switch</h2>
@@ -159,6 +191,8 @@
 
         <h1>15. Terraria</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/1/1a/Terraria_Steam_artwork.jpg">
+        <br>
+        <a href="terraria.html">See Grand Theft Auto V</a>
         <h2>Sales: 44,500,000</h2>
         <h2>Series: None</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -168,6 +202,8 @@
 
         <h1>16. Wii Fit / Plus</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/5/5b/Wii_Fit_PAL_boxart.JPG">
+        <br>
+        <a href="wiifitplus.html">See Grand Theft Auto V</a>
         <h2>Sales: 43,800,000</h2>
         <h2>Series: Wii</h2>
         <h2>Platform(s): Wii</h2>
@@ -177,6 +213,8 @@
 
         <h1>17. Pac-Man</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/1/16/Pac_flyer.png">
+        <br>
+        <a href="pacman.html">See Grand Theft Auto V</a>
         <h2>Sales: 42,071,635</h2>
         <h2>Series: Pac-Man</h2>
         <h2>Platform(s): Multi-platform</h2>
@@ -186,6 +224,8 @@
 
         <h1>18. Mario Kart Wii</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Mario_Kart_Wii.png">
+        <br>
+        <a href="mariokartwii.html">See Grand Theft Auto V</a>
         <h2>Sales: 37,380,000</h2>
         <h2>Series: Mario Kart</h2>
         <h2>Platform(s): Wii</h2>
@@ -195,6 +235,8 @@
 
         <h1>19. Super Smash Bros. Ultimate</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/5/50/Super_Smash_Bros._Ultimate.jpg">
+        <br>
+        <a href="supersmashbrosultimate.html">See Grand Theft Auto V</a>
         <h2>Sales: 34,220,000</h2>
         <h2>Series: Super Smash Bros.</h2>
         <h2>Platform(s): Nintendo Switch</h2>
@@ -204,6 +246,8 @@
 
         <h1>20. The Legend of Zelda: Breath of the Wild</h1>
         <img src="https://upload.wikimedia.org/wikipedia/en/c/c6/The_Legend_of_Zelda_Breath_of_the_Wild.jpg">
+        <br>
+        <a href="thelegendofzeldabreathofthewild.html">See Grand Theft Auto V</a>
         <h2>Sales: 33,550,000</h2>
         <h2>Series: The Legend of Zelda</h2>
         <h2>Platform(s): Wii U / Switch</h2>
