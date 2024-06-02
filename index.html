@@ -10,29 +10,31 @@
         <h1>Top Best Selling Games of All Time</h1>
         <h2>This is a list of video games that have sold the highest number of software units worldwide.</h2>
 
+        <br>
+
         <div class="container">
             <div class="spinBtn">What Game Should I Try</div>
             <div class="wheel">
-                <div class="number" style="--i:1;--clr: #0dff00;"><span>Minecraft</span></div>
-                <div class="number" style="--i:2;--clr: #ffaa00;"><span>Grand Theft Auto V</span></div>
-                <div class="number" style="--i:3;--clr: #0099ff;"><span>Tetris (EA)</span></div>
-                <div class="number" style="--i:4;--clr: #00fbff;"><span>Wii Sports</span></div>
-                <div class="number" style="--i:5;--clr: #ff8c00;"><span>PUBG: Battlegrounds</span></div>
-                <div class="number" style="--i:6;--clr: #ff0000;"><span>Mario Kart 8 / Deluxe</span></div>
-                <div class="number" style="--i:7;--clr: #ff5500;"><span>Red Dead Redemption 2</span></div>
-                <div class="number" style="--i:8;--clr: #00b3ff;"><span>Super Mario Bros.</span></div>
+                <div class="number" style="--i:1;--clr: #1bc512; font-size: 1.6em;"><span>Minecraft</span></div>
+                <div class="number" style="--i:2;--clr: #ffaa00; font-size: 0.7em;"><span>Grand Theft Auto V</span></div>
+                <div class="number" style="--i:3;--clr: #0099ff; font-size: 1.4em;"><span>Tetris (EA)</span></div>
+                <div class="number" style="--i:4;--clr: #07c4c7; font-size: 1.4em;"><span>Wii Sports</span></div>
+                <div class="number" style="--i:5;--clr: #ff8c00; font-size: 0.7em;"><span>PUBG: Battlegrounds</span></div>
+                <div class="number" style="--i:6;--clr: #ff0000; font-size: 0.7em;"><span>Mario Kart 8 / Deluxe</span></div>
+                <div class="number" style="--i:7;--clr: #ff5500; font-size: 0.6em;"><span>Red Dead Redemption 2</span></div>
+                <div class="number" style="--i:8;--clr: #00b3ff; font-size: 0.8em;"><span>Super Mario Bros.</span></div>
                 </div>
         </div>
 
         <script>
             let wheel = document.querySelector('.wheel');
-            let spinBtn = ddocument.querySelector('.spinBtn');
-            let value = Math.ceil(Math.random() * 3600)
+            let spinBtn = document.querySelector('.spinBtn');
+            let value = math.ceil(Math.random() * 3600);
 
-            spinBtn.onclick = function({
-                wheel.style.transform = "rotate(" + Value + "deg)";
-                value += Math.ceil(Math.random() * 3600);
-            })
+            spinBtn.onclick = function(){
+                wheel.style.transform = "rotate(" + value + "deg)"
+                value += Math.ceil(Math.random() * 3600)
+            }
         </script>
 
         <h1>1. Minecraft</h1>
